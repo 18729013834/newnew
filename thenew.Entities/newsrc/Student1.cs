@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.Serialization;
 using MetaShare.Common.Core.Entities;
 /*add customized code between this region*/
+Public string Name {get;set;}
 /*add customized code between this region*/
 
 namespace thenew.Entities.newsrc
@@ -16,6 +17,7 @@ namespace thenew.Entities.newsrc
 		public string StudentName{get; set;}
 		
 		/*add customized code between this region*/
+		Public string Name {get;set;}
 		/*add customized code between this region*/
 	}
 }
