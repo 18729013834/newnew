@@ -1,0 +1,31 @@
+﻿@model Web.Utilities.Mvc.Foundation.IndexViewModel<thenew.Entities.newsrc.course>
+@{
+    ViewBag.Title = "Index";
+<!--add customized code between this region-->
+<!--add customized code between this region-->
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="m_title_box">
+    <ol>
+        <li data-id="Index">
+            <a href="#">course</a><i class="icon-arrowright"></i>
+        </li>
+        <li data-id="Index">Index</li>
+    </ol>
+    <div class="m_title_action">
+        <a class="m_btn" href="@(this.Url.Action("Create", "course", null))">New</a>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">course</div>
+    <div class="panel-body">
+            @Html.Partial(Url.Content("../newsrc/course/_Search"), Model.SearchModel)
+    <div class="table-responsive" id="course_DataList">
+            @Html.Partial(Url.Content("../newsrc/course/_DataList"), Model)
+    </div>
+    </div>
+</div>
+@this.Html.Partial("_DeleteDialog")
+<!--add customized code between this region-->
+<!--add customized code between this region-->
