@@ -17,7 +17,7 @@ namespace thenew.Entities.newsrc
 		public string StudentName{get; set;}
 		
 		/*add customized code between this region*/
-		Public string Name {get;set;}
+		<add key="mqttUserName" value="admin"/>
 		/*add customized code between this region*/
 	}
 }
